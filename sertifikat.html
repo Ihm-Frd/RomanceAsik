@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hadiah Buat Kamu</title>
+    <meta name="description" content="@feelthisray - Script HTML by Feeldream Repl Co" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="icon" type="image/svg+xml" href="https://feeldreams.github.io/main-icon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://htmlku.com/khususkamu/style.css" />
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <style>
+    .button-transparent {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border: 2px solid white;
+      background: transparent;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+  }
+  
+  .button-transparent:hover {
+      background: rgba(255, 255, 255, 0.2);
+  }
+  </style>
+  </head>
+
+  <body>
+    <audio src="./media/Hari Lebaran.mp3" id="linkmp3" class="hidden"></audio>
+    <div class="overlay">
+      <div class="loading-message" style="display: none">Hai kamu!<br />Tunggu dulu ya..</div>
+      <div id="loveIn" class="blocklove" style="display: flex">
+        <style>
+          .lovein svg {
+            animation: none;
+            stroke: #ff0000;
+            stroke-width: 1.3;
+            fill: none;
+            width: 35px;
+            height: 35px;
+          }</style
+        ><label class="lovein"
+          ><svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g transform="translate(2.550170, 3.550158)">
+              <path
+                d="M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z"
+              ></path>
+              <path d="M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842"></path>
+            </g></svg
+        ></label>
+        <p id="ket">Sentuh LOVEnya!</p>
+      </div>
+    </div>
+
+    <div id="bodyblur">
+      <img src="./media/ketupat.webp" id="wallpaper" />
+      <div id="thisblur"></div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+      <div class="swiper-wrapper" id="swiper-wrapper-010b4db819314db100" aria-live="polite">
+        <div class="swiper-slide swiper-slide-active" style="width: 811px" role="group" aria-label="1 / 4">
+          <div id="stiker1" class="scale0 stiker">
+            <img src="https://feeldreams.github.io/peach22.gif" />
+          </div>
+          <h1 id="teks1" class="scale0 quicksand" style="font-size: 22px">
+            Nih Hadiah Spesial Buat Anak Mamah Yuni 😛😛😛<br /><br />
+            &gt;&gt;&gt;&gt;
+          </h1>
+        </div>
+
+        <div class="swiper-slide swiper-slide-next" style="width: 811px" role="group" aria-label="2 / 4">
+          <div id="stiker2" class="scale0 stiker">
+            <img src="https://feeldreams.github.io/peachspeech.gif" />
+          </div>
+          <h1 id="teks2" class="scale0 quicksand" style="font-size: 18px">
+            Aku Punya Penghargaan<br />Buat Kamuuuuu 🫶<br /><br />
+            &gt;&gt;&gt;&gt;
+          </h1>
+        </div>
+
+        <div class="swiper-slide" style="width: 811px" role="group" aria-label="3 / 4">
+          <div id="stiker3" class="scale0 sertifikat">
+            <img src="./media/islam.jpeg" alt="Sertifikat" />
+
+            <div id="teks3" class="scale0 text-overlay text-black">
+              <h1 style="font-family: var(--caveat); font-size: 22px; color: rgb(1, 163, 131)">SERTIFIKAT</h1>
+              <div class="content">Sertifikat ini menyatakan bahwa</div>
+              <br />
+              <h1 style="font-size: 22px; margin: 5px; color: rgb(1, 163, 131)">ERLA AULIA SAPUTRI</h1>
+              <br />
+              <div class="content" style="font-size: 15px">Telah berhasil menjalankan ibadah puasa</div>
+              <div style="font-family: var(--caveat); font-size: 19px" class="real">Ramadhan <span style="color: rgb(1, 163, 131)">1446H</span></div>
+            </div>
+          </div>
+          <p id="teksTerima" class="hidden">Yeeaayy! Maaci udah kangen balik 😋🫶</p>
+        </div>
+
+        <div class="swiper-slide" role="group" aria-label="4 / 4" style="width: 811px">
+          <div id="stiker4" class="scale0 stiker" style="margin-top: 50px">
+            <img id="stikerAkhir1" src="https://feeldreams.github.io/peachheart.gif" />
+            <img id="stikerAkhir2" class="hidden" src="https://feeldreams.github.io/peach6.gif" />
+            <img id="stikerAkhir3" class="hidden" src="https://feeldreams.github.io/peach1.gif" />
+          </div>
+          <div id="scroll-container" class="blocktext">
+            <h1 id="teks4" class="scale0 quicksand" style="font-size: 17px; font-weight: 400"></h1>
+            <h1 id="teksTambahan" class="hidden"><span id="teksLove">Idaman bgt intinya mah </span></h1>
+            <!-- Emoji Bisa Lebih dari 1 -->
+            <script>
+              const emojiAkhir = ["🥰"];
+            </script>
+          </div>
+          <h3>
+            <a href="Script Nembak.html" class="button-transparent">Bonusss >>></a>
+          </h3>
+          
+        </div>
+      </div>
+      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-010b4db819314db100" aria-disabled="false"></div>
+      <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-010b4db819314db100" aria-disabled="true"></div>
+      <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span
+        ><span class="swiper-pagination-bullet"></span>
+      </div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/sertifikat.js"></script>
+    /* <script src="https://htmlku.com/khususkamu/script.js"></script> */
+  </body>
+</html>
