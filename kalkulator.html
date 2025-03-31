@@ -12,6 +12,25 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 
+    <style>
+      .button-transparent {
+     display: inline-block;
+     padding: 10px 20px;
+     font-size: 16px;
+     font-weight: bold;
+     color: white;
+     text-decoration: none;
+     border: 2px solid white;
+     background: transparent;
+     border-radius: 8px;
+     transition: all 0.3s ease;
+ }
+ 
+ .button-transparent:hover {
+     background: rgba(255, 255, 255, 0.2);
+ }
+   </style>
+
     <!-- Demo styles -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
@@ -421,10 +440,12 @@
         pointer-events: none; /* Optional, agar elemen tidak bisa diakses */
       }
     </style>
-    
   </head>
   <body style="height: 100%">
-    <audio src="https://feeldreams.github.io/audio/foreveryoung.mp3" id="linkmp3" class="sembunyi"></audio>
+    <script>
+      audio = new Audio(document.getElementById("linkmp3").src);
+    </script>
+    <audio id="linkmp3" src="media/GaramMadu.mp3" autoplay loop></audio>
     <div class="overlay" style="display: none">
       <div class="loading-message" style="display: none">Hai kamu!<br />Tunggu dulu ya..</div>
       <div id="loveIn" class="blocklove" style="display: flex">
@@ -512,6 +533,9 @@
             </div>
           </div>
           <p id="teksLoveU" class="sembunyi"></p>
+          <h3>
+            <a href="Script Nembak.html" class="button-transparent">Bonusss >>></a>
+          </h3>
         </div>
       </div>
       <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-102a335cfee9c850a" aria-disabled="false"></div>
